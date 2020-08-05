@@ -1,6 +1,4 @@
-#配列初期化
-x <- c();
-y <- c();
+#変数設定
 width <- 1000;
 height <- 1000;
 
@@ -19,8 +17,6 @@ uchiage <- function() {
 
   #点の生成
   for (i in 1:600) {
-    #  x <- append(x, x_start)
-    #  y <- append(y, y_explosion/500*i)
     if (i<=500) {
        points(x_start+10*sin(y_explosion/500*i/50), y_explosion/500*i,pch="I", col=rgb(242/255,203/255,7/255))
     }
